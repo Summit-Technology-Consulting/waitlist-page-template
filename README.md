@@ -1,8 +1,11 @@
-# Webapp Template
+# Wailist Page Template
 
-Template designed to quickly build full stack apps.
+Template designed to quickly build a waitlist page to collect emails and validate ideas.
 
 Utilizes Github Actions and Ansible to build Docker images to quickly deploy onto an AWS EC2 Debian instance.
+
+![Homepage Image](images/home.png){: .mx-auto}
+![Homepage Continued Image](images/home_continue.png){: .mx-auto}
 
 ## Technologies
 
@@ -16,7 +19,18 @@ Utilizes Github Actions and Ansible to build Docker images to quickly deploy ont
 
 ## Prerequisites
 
-- Install Ansible
+- Fill out your platform's details in `src/constants.ts` 
+
+```js
+const Constants = {
+    platformName: "NAME", // The name of your app/platform/etc
+    contactEmail: "contact@xxx.com", // Your contact email
+    backendApiURL: "http://localhost:8000/api/subscribe", // The URL you want to hit for the backend - from AWS/GCP/ETC
+};
+```
+
+- Copy `.env.example` and rename it to `.env`, fill out the API KEY from Twillio [SendGrid](https://sendgrid.com/en-us/resource/setting-up-your-email-infrastructure-with-twilio-sendgrid)
+
 
 - Create a Dockerhub account/repo and fill out the Github repo environmental variables:
 

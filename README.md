@@ -4,8 +4,10 @@ Template designed to quickly build a waitlist page to collect emails and validat
 
 Utilizes Github Actions and Ansible to build Docker images to quickly deploy onto an AWS EC2 Debian instance.
 
-![Homepage Image](images/home.png){: .mx-auto}
-![Homepage Continued Image](images/home_continue.png){: .mx-auto}
+<div style="text-align: center;">
+    <img src="images/home.png" alt="Homepage Image" style="width: 80%;" />
+    <img src="images/home_continue.png" alt="Homepage Continued Image" style="width: 80%;" />
+</div>
 
 ## Technologies
 

@@ -136,7 +136,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
           <div className="space-y-8">
             {[
-              "Advanced AI agent Hub with verified providers",
+              "Advanced platform with verified providers",
               "Secure and scalable infrastructure",
               "24/7 support and monitoring",
               "Custom integration options"
